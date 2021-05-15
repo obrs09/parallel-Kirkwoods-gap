@@ -1,0 +1,16 @@
+go.py will compile and run "IV.c", "ode.c", "hist.py"
+
+setting the parameters in go.py
+num_of_astr is the number of asteroids
+last_time is the time that the system will run.
+
+
+
+gompi.py will compile and run "IV.c", "odempi.c", "histmpi.py"
+
+setting the parameters in go.py
+num_of_astr is the number of asteroids
+last_time is the time that the system will run.
+change the # in the following line to the number of thread you want
+os.system("mpirun -np # ./odempi.out")
+
